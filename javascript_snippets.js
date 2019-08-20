@@ -12,3 +12,9 @@ $.fn.isInViewport = function() {
 
     return elementBottom > viewportTop && elementTop < viewportBottom;
 };
+
+$.fn.extend({
+  toggleText: function(a, b) {
+      return this.text(this.text() == b ? a : b);
+  }
+});
